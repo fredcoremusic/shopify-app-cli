@@ -275,6 +275,16 @@ describe Script::Layers::Infrastructure::ScriptService do
       it 'should have no errors' do
         assert_equal(script_service_response, subject)
       end
+
+      it 'should have no errors when shop domain is formatted' do
+        assert_equal(script_service_response, script_service.enable(
+          api_key: api_key,
+          shop_domain: 'my.shop.com/',
+          configuration: configuration,
+          extension_point_type: extension_point_type,
+          title: title
+        ))
+      end
     end
 
     describe 'when failure' do
@@ -407,6 +417,14 @@ describe Script::Layers::Infrastructure::ScriptService do
 
       it 'should have no errors' do
         assert_equal(script_service_response, subject)
+      end
+
+      it 'should have no errors when shop domain is formatted' do
+        assert_equal(script_service_response, script_service.disable(
+          extension_point_type: extension_point_type,
+          api_key: api_key,
+          shop_domain: 'shop.myshopify.com/',
+        ))
       end
     end
 
