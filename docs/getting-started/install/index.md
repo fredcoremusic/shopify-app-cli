@@ -8,6 +8,7 @@ redirect_from: "/install/"
 Shopify App CLI can be installed on a variety of systems, using a variety of package managers.
 > Note that for systems that have multiple installation options, you only need to use one of these methods to install.
 
+---
 ### macOS
 
 Shopify App CLI is available via Homebrew _or_ RubyGems.
@@ -24,6 +25,8 @@ $ brew install shopify-cli
 **RubyGems**
 
 See the RubyGems section below for further details.
+
+---
 
 ### Debian/Ubuntu Linux
 
@@ -43,6 +46,8 @@ $ sudo apt install shopify-cli-x.y.z.deb
 
 See the RubyGems section below for further details.
 
+---
+
 ### CentOS 8+/Fedora/Red Hat/SUSE Linux
 
 On RPM-based Linux systems, Shopify App CLI is available via the `yum` command _or_ RubyGems.
@@ -61,15 +66,23 @@ $ sudo yum install shopify-cli-x.y.x.rpm
 
 See the RubyGems section below for further details.
 
+---
+
 ### Windows 10
 
 On Windows 10 systems, Shopify App CLI is available via Ruby Gems - see below.
 
+---
+
 ### Ruby Gem (all platforms)
+
+Shopify App CLI is available on all platforms as a Ruby Gem via [RubyGems.org](https://rubygems.org/).
 
 ```console
 $ gem install shopify-cli
 ```
+
+---
 
 ### To check that Shopify App CLI is installed correctly:
 
