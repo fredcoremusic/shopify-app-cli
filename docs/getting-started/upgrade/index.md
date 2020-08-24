@@ -5,7 +5,7 @@ toc: false
 redirect_from: "/upgrade/"
 ---
 
-You can manage upgrades to Shopify App CLI with the package manager for your platform.
+You can manage upgrades to Shopify App CLI with the package manager for your platform.  **Note** that it's important to use the same package manager to upgrade that you originally used to install Shopify App CLI.
 
 ### Homebrew (macOS)
 
@@ -18,6 +18,8 @@ $ brew upgrade shopify-cli
 
 On Debian-based Linux distributions, download the latest `.deb` file for Shopify App CLI from the [releases page](https://github.com/Shopify/shopify-app-cli/releases) and install it to update.
 
+1. Download the `.deb` file from the [releases page](https://github.com/Shopify/shopify-app-cli/releases)
+1. Install the downloaded file
 ```console
 $ sudo apt install shopify-cli-x.y.z.deb
 ```
@@ -26,11 +28,13 @@ $ sudo apt install shopify-cli-x.y.z.deb
 
 On Red Hat–based Linux distributions, download the latest `.rpm` file for Shopify App CLI from the [releases page](https://github.com/Shopify/shopify-app-cli/releases) and install it to update.
 
+1. Download the `.rpm` file from the [releases page](https://github.com/Shopify/shopify-app-cli/releases)
+1. Install the downloaded file
 ```console
-$ sudo yum install shopify-cli-x.y.z.rpm
+$ sudo yum install shopify-cli-x.y.x.rpm
 ```
 
-### Ruby gem
+### Ruby Gem (macOS, Linux, Windows 10)
 
 ```console
 $ gem update shopify-cli
